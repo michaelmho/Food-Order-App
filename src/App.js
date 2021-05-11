@@ -1,9 +1,16 @@
-function App() {
+import Header from "./components/Layout/Header";
+import React from "react";
+import Meals from "./components/Meals/Meals";
+const App = () => {
   return (
-    <div>
+    <React.Fragment>
+      <Header />
+      <main>
+        <Meals />
+      </main>
       <h2>Let's get started!</h2>
-    </div>
+    </React.Fragment>
   );
-}
+};
 
 export default App;
